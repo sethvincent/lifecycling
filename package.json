@@ -1,0 +1,21 @@
+{
+    "name": "lifecycling",
+    "version": "0.0.0",
+    "description": "Resource management. It's like riding a lifecycle.",
+    "keywords": [],
+    "license": "Apache-2.0",
+    "author": "Seth Vincent <sethvincent@gmail.com> (https://sethvincent.com)",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "brittle test/**/*.test.js",
+        "fmt": "dxv fmt -c .config/dprint.jsonc",
+        "lint": "dxv lint -c .config/eslint.config.js",
+        "deps": "dxv deps -c .config/.depcheckrc",
+        "type": "dxv type -c .config/tsconfig.json"
+    },
+    "devDependencies": {
+        "@dxv/cli": "^2.0.4",
+        "brittle": "^3.13.1"
+    }
+}
