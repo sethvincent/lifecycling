@@ -342,9 +342,12 @@ export default class Lifecycle {
      * Resets the resource to initial state.
      * Useful for restarting after completion or recovering from errors.
      */
-    reset () {
-        this.#stateMachine = new StateMachine(this.#transitions)
-    }
+     reset () {
+         this.#queue = new Queue((item) => {
+             return this.#run(item.operation, item.interimState, item.toState)
+         })
+         this.#stateMachine = new StateMachine(this.#transitions)
+     }
 
     /**
      * Executes a lifecycle operation with proper state transitions.

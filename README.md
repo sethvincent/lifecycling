@@ -1,5 +1,7 @@
 # lifecycling
 
+> Resource management. It's like riding a lifecycle.
+
 An agile little module for handling open, close, suspend, resume lifecycle transitions.
 
 ## Install
