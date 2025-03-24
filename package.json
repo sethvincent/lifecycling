@@ -1,6 +1,6 @@
 {
     "name": "lifecycling",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Resource management. It's like riding a lifecycle.",
     "keywords": [],
     "license": "Apache-2.0",
